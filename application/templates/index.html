@@ -1,0 +1,20 @@
+<title>Nuts and Spices - Home Page</title>
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to Nuts and Spices</h1>
+            <div class="container">
+            <p>Nuts and Spices curates an extensive collection of nuts, oils and home goods that constantly evolves to fit our customers’ needs. To ensure our quality is top of the line. Once you find what you’re looking for, we guarantee a smooth checkout and delivery experience with 24/7 support.</p>
+            </div>
+
+            {% if registered %}
+            <h3>Let's get started.</h3>
+            {% else %}
+            <p>Already registered? <a href="{{url_for('login') }}">Login</a></p>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock %}

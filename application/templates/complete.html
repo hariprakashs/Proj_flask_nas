@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Thanks for ordering:</h1>
+
+            <p>Product ID: {{ data.id }}</p>
+            <p>Product: {{ data.name }}</p>
+            <p>Total to Pay: {{ data.rate }}</p>
+
+        </div>
+    </div>
+{% endblock %}
